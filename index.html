@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Suave Amazônia</title>
+<meta content="A Amazônia em uma seda. Conheça a edição Suave Amazônia." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+@font-face{font-family:"Satoshi Variable";src:url("fonts/Satoshi-Variable-Bold.woff2") format("woff2");font-style:normal;font-weight:700 900;font-display:swap}
+:root{--id-blue:#008eff;--green:#35cc36;--text:#050505}
+*{box-sizing:border-box}html,body{margin:0;color:var(--text)}
+html{background:#f3f3f3}
+body{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;overflow-x:hidden;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:url("images/background.png") center/cover no-repeat}
+a{color:inherit;text-decoration:none}img{display:block}.stage{position:relative;margin:0 auto;background:transparent;transform-origin:top left}.desktop{width:1440px;height:5740px}.mobile{width:405px;height:3065px;display:none}.abs{position:absolute}.strong{font-family:"Satoshi Variable","Arial Black",Arial,Helvetica,sans-serif;font-weight:800}.center{text-align:center}.body-copy{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;font-weight:400}.button{display:flex;align-items:center;border-radius:28px;font-family:"Satoshi Variable","Arial Black",Arial,Helvetica,sans-serif;font-weight:800}.cta{background:var(--id-blue);color:#fff;justify-content:center;box-shadow:0 8px 22px rgba(0,142,255,.16);transition:transform .2s ease,filter .2s ease}.cta:hover,.cta:focus-visible{transform:translateY(-2px);filter:brightness(.96);outline:none}
+/* desktop */
+.d-logo-id{left:150px;top:48px;width:64px}.d-logo-suave{left:1140px;top:36px;width:150px}
+.d-prod-claro{left:185px;top:150px;width:520px}.d-prod-verde{left:735px;top:245px;width:520px}
+.d-auth{left:480px;top:540px;width:480px}.d-title{left:0;top:690px;width:1440px;font-size:44px;line-height:1}
+.d-cta{left:320px;top:790px;width:800px;height:92px;padding:0 34px;font-size:28px;gap:22px;border-radius:46px}.d-cta .pct{display:flex;align-items:center;justify-content:center;background:#fff;color:var(--id-blue);width:58px;height:58px;border-radius:50%;font-size:36px;line-height:1}
+.desktop p{margin:0}.d-content-stack{left:0;top:1035px;width:1440px;display:flex;flex-direction:column;align-items:center;gap:130px}.d-content-section{width:100%;display:flex;flex-direction:column;align-items:center;gap:32px}.d-content-section h2{margin:0;width:1440px;font-size:34px;line-height:1.1;text-align:center}.d-content-section p{margin:0;width:1080px;font-size:21px;line-height:32px;text-align:justify;text-justify:inter-word;hyphens:auto}.d-content-section img{width:760px;height:430px;border-radius:10px;object-fit:cover}.d-content-section .two-line-title{line-height:46px}
+/* mobile */
+.m-logo-id{left:38px;top:27px;width:27px}.m-logo-suave{left:307px;top:18px;width:64px}.m-prod-claro{left:79px;top:97px;width:244px}.m-prod-verde{left:82px;top:178px;width:244px}.m-auth{left:104px;top:285px;width:186px}.m-title{left:0;top:338px;width:405px;font-size:18px;line-height:1.15}.m-cta{left:19px;top:397px;width:367px;height:58px;padding:0 17px;font-size:14px;gap:12px;border-radius:14px}.m-cta .pct{display:flex;align-items:center;justify-content:center;background:#fff;color:var(--id-blue);width:42px;height:42px;border-radius:50%;font-size:27px;line-height:1}.m-content-stack{left:0;top:502px;width:405px;display:flex;flex-direction:column;align-items:center;gap:40px}.m-content-section{width:100%;display:flex;flex-direction:column;align-items:center;gap:18px}.m-content-section h2{margin:0;width:405px;font-size:14px;line-height:1.1;text-align:center}.m-content-section p{margin:0;width:330px;font-size:12px;line-height:20px;text-align:justify;text-justify:inter-word;hyphens:auto}.m-content-section img{border-radius:2px;object-fit:cover}.m-content-section .m-cobra{width:283.3px;height:188.7px}.m-content-section .m-tucupi{width:291.7px;height:191.7px}.m-content-section .m-abelha{width:291.7px;height:193.3px}.m-content-section .m-encontro{width:291.7px;height:190.7px}.m-content-section .m-vitoria{width:291.7px;height:194.7px}.m-content-section .m-seringueira{width:291.7px;height:190.7px}.m-content-section .two-line-title{line-height:22.4px}
+@media(max-width:700px){.desktop{display:none}.mobile{display:block}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div aria-hidden="false" class="stage desktop" id="desktop-stage">
+<img alt="ID" class="abs d-logo-id" src="images/logo-id.png"/>
+<img alt="Suave Amazônia" class="abs d-logo-suave" src="images/logo-suave.png"/>
+<img alt="Seda Suave Amazônia" class="abs d-prod-claro" src="images/hero-produto-claro.png"/>
+<img alt="Seda Suave Amazônia" class="abs d-prod-verde" src="images/hero-produto-verde.png"/>
+<img alt="Produto autêntico" class="abs d-auth" src="images/produto-autentico.png"/>
+<h1 class="abs strong center d-title">SEDA SUAVE AMAZÔNIA</h1>
+<a class="abs button cta d-cta" href="parceiros/"><span>PARCEIROS / DESCONTOS</span><span class="pct">%</span></a>
+<div class="abs d-content-stack">
+<section class="d-content-section">
+<h2 class="strong">BORA FICAR SUAVE?</h2>
+<p class="body-copy">A Amazônia é a maior floresta tropical do mundo e uma das regiões mais importantes para o equilíbrio climático do planeta. Ela abriga cerca de 10% de todas as espécies conhecidas na Terra, além de milhares de plantas, peixes e insetos ainda pouco estudados. Seus rios formam a maior bacia hidrográfica do mundo e influenciam diretamente o clima e o regime de chuvas de diversos países da América do Sul.</p>
+<img alt="Floresta Amazônica" class="d-cobra" src="images/cobra.png"/>
+</section>
+<section class="d-content-section">
+<h2 class="strong">O TEMPERO QUE JÁ FOI VENENO</h2>
+<p class="body-copy">O tucupi, símbolo da culinária paraense, vem do líquido da mandioca brava que é tóxico quando cru. Foram os povos indígenas que descobriram, há séculos, como ferver esse líquido por horas até virar um dos temperos mais amados da Amazônia.</p>
+<img alt="Tucupi" class="d-tucupi" src="images/tucupi.png"/>
+</section>
+<section class="d-content-section">
+<h2 class="strong">O MEL QUE NÃO PICA</h2>
+<p class="body-copy">Na Amazônia vivem abelhas nativas sem ferrão, como a uruçu, que produzem um mel raro e muito valorizado. Além de não picarem, elas são essenciais para a polinização da floresta e hoje inspiram até bebidas artesanais feitas na região.</p>
+<img alt="Abelha em flor" class="d-abelha" src="images/abelha.png"/>
+</section>
+<section class="d-content-section">
+<h2 class="strong">ENCONTRO DAS ÁGUAS</h2>
+<p class="body-copy">Perto de Manaus, o Rio Negro e o Rio Solimões correm lado a lado por até 6 km sem se misturar. Isso acontece porque as águas têm cores, temperaturas e velocidades diferentes. O resultado é um dos espetáculos naturais mais famosos da Amazônia.</p>
+<img alt="Encontro das Águas" class="d-encontro" src="images/encontro-aguas.png"/>
+</section>
+<section class="d-content-section">
+<h2 class="strong">A FLOR QUE VIROU LENDA</h2>
+<p class="body-copy">A vitória-régia, a folha gigante que flutua nos rios e lagos da Amazônia, nasceu, segundo a lenda, de uma jovem indígena chamada Naiá. Apaixonada pela lua, ela tentou alcançá-la na água e foi transformada na flor que hoje encanta quem visita a região.</p>
+<img alt="Vitória-régia" class="d-vitoria" src="images/vitoria-regia.png"/>
+</section>
+<section class="d-content-section">
+<h2 class="strong two-line-title">QUANDO A BORRACHA<br/>VALIA OURO</h2>
+<p class="body-copy">No auge do ciclo da borracha, o látex extraído das seringueiras da Amazônia valia tanto quanto ouro. Foi esse dinheiro que construiu teatros, avenidas e prédios luxuosos em Belém, dando à cidade um charme europeu que existe até hoje.</p>
+<img alt="Seringueira" class="d-seringueira" src="images/seringueira.png"/>
+</section>
+</div>
+</div>
+<div aria-hidden="true" class="stage mobile" id="mobile-stage">
+<img alt="ID" class="abs m-logo-id" src="images/logo-id.png"/>
+<img alt="Suave Amazônia" class="abs m-logo-suave" src="images/logo-suave.png"/>
+<img alt="Seda Suave Amazônia" class="abs m-prod-claro" src="images/hero-produto-claro.png"/>
+<img alt="Seda Suave Amazônia" class="abs m-prod-verde" src="images/hero-produto-verde.png"/>
+<img alt="Produto autêntico" class="abs m-auth" src="images/produto-autentico.png"/>
+<h1 class="abs strong center m-title">SEDA SUAVE AMAZÔNIA</h1>
+<a class="abs button cta m-cta" href="parceiros/"><span>PARCEIROS / DESCONTOS</span><span class="pct">%</span></a>
+<div class="abs m-content-stack">
+<section class="m-content-section">
+<h2 class="strong">BORA FICAR SUAVE?</h2>
+<p class="body-copy">A Amazônia é a maior floresta tropical do mundo e uma das regiões mais importantes para o equilíbrio climático do planeta. Ela abriga cerca de 10% de todas as espécies conhecidas na Terra, além de milhares de plantas, peixes e insetos ainda pouco estudados. Seus rios formam a maior bacia hidrográfica do mundo e influenciam diretamente o clima e o regime de chuvas de diversos países da América do Sul.</p>
+<img alt="Floresta Amazônica" class="m-cobra" src="images/cobra.png"/>
+</section>
+<section class="m-content-section">
+<h2 class="strong">O TEMPERO QUE JÁ FOI VENENO</h2>
+<p class="body-copy">O tucupi, símbolo da culinária paraense, vem do líquido da mandioca brava que é tóxico quando cru. Foram os povos indígenas que descobriram, há séculos, como ferver esse líquido por horas até virar um dos temperos mais amados da Amazônia.</p>
+<img alt="Tucupi" class="m-tucupi" src="images/tucupi.png"/>
+</section>
+<section class="m-content-section">
+<h2 class="strong">O MEL QUE NÃO PICA</h2>
+<p class="body-copy">Na Amazônia vivem abelhas nativas sem ferrão, como a uruçu, que produzem um mel raro e muito valorizado. Além de não picarem, elas são essenciais para a polinização da floresta e hoje inspiram até bebidas artesanais feitas na região.</p>
+<img alt="Abelha em flor" class="m-abelha" src="images/abelha.png"/>
+</section>
+<section class="m-content-section">
+<h2 class="strong">ENCONTRO DAS ÁGUAS</h2>
+<p class="body-copy">Perto de Manaus, o Rio Negro e o Rio Solimões correm lado a lado por até 6 km sem se misturar. Isso acontece porque as águas têm cores, temperaturas e velocidades diferentes. O resultado é um dos espetáculos naturais mais famosos da Amazônia.</p>
+<img alt="Encontro das Águas" class="m-encontro" src="images/encontro-aguas.png"/>
+</section>
+<section class="m-content-section">
+<h2 class="strong">A FLOR QUE VIROU LENDA</h2>
+<p class="body-copy">A vitória-régia, a folha gigante que flutua nos rios e lagos da Amazônia, nasceu, segundo a lenda, de uma jovem indígena chamada Naiá. Apaixonada pela lua, ela tentou alcançá-la na água e foi transformada na flor que hoje encanta quem visita a região.</p>
+<img alt="Vitória-régia" class="m-vitoria" src="images/vitoria-regia.png"/>
+</section>
+<section class="m-content-section">
+<h2 class="strong two-line-title">QUANDO A BORRACHA<br/>VALIA OURO</h2>
+<p class="body-copy">No auge do ciclo da borracha, o látex extraído das seringueiras da Amazônia valia tanto quanto ouro. Foi esse dinheiro que construiu teatros, avenidas e prédios luxuosos em Belém, dando à cidade um charme europeu que existe até hoje.</p>
+<img alt="Seringueira" class="m-seringueira" src="images/seringueira.png"/>
+</section>
+</div>
+</div>
+<script>
+const desktop=document.getElementById('desktop-stage');
+const mobile=document.getElementById('mobile-stage');
+function fit(){
+  const isMobile=window.innerWidth<=700;
+  const stage=isMobile?mobile:desktop;
+  const other=isMobile?desktop:mobile;
+  stage.style.display='block';other.style.display='none';
+  stage.setAttribute('aria-hidden','false');other.setAttribute('aria-hidden','true');
+  const designWidth=isMobile?405:1440;
+  const stack=stage.querySelector(isMobile?'.m-content-stack':'.d-content-stack');
+  const bottomSpace=isMobile?44:110;
+  const designHeight=Math.ceil(stack.offsetTop+stack.offsetHeight+bottomSpace);
+  const scale=Math.min(1,window.innerWidth/designWidth);
+  stage.style.height=`${designHeight}px`;
+  stage.style.transform=`scale(${scale})`;
+  document.body.style.height=`${designHeight*scale}px`;
+}
+fit();document.fonts?.ready.then(fit);addEventListener('resize',fit);
+</script>
+</body>
+</html>
